@@ -12,9 +12,9 @@
   "private": true,
   "scripts": {
     "develop": "strapi develop",
-    "build": "strapi build",
-    "start": "strapi start",
-    "strapi": "strapi"
+    "build": "NODE_ENV=production strapi build",
+    "start": "NODE_ENV=production strapi start",
+    "strapi": "NODE_ENV=production strapi"
   },
   "dependencies": {
     "@strapi/plugin-users-permissions": "4.3.4",
